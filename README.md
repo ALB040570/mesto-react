@@ -1,6 +1,6 @@
 # Проект 10: Место - REACT
 
-### [Просмотр](https://alb040570.github.io/mesto/)
+### [Просмотр](https://alb040570.github.io/mesto-react/)
 
 - Описание проекта
 - Функциональность
