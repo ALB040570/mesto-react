@@ -1,0 +1,39 @@
+@import url(./__logo/header__loge.css);
+
+.header {
+  border-bottom: 1px solid rgba(54, 54, 54, .7);
+
+}
+
+ /*точки перелома*/
+@media screen and (min-width: 1280px) {
+  .header {
+    margin: 0 199px 0;
+    min-width: calc(1280px - 2*199px);
+  }
+}
+@media (min-width: 931px) and (max-width: 1279px)  {
+  .header {
+    margin: 0;
+    min-width: 886px;
+    }
+}
+@media (min-width: 640px) and (max-width: 930px)  {
+  .header {
+    min-width: 584px;
+    }
+}
+
+@media (min-width: 301px) and (max-width: 639px)  {
+  .header {
+    margin: 0;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px)  {
+  .header {
+    margin: 0;
+    min-width: 300px;
+  }
+}

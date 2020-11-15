@@ -1,0 +1,33 @@
+@import url(./__text/footer__text.css);
+.footer {
+  margin: 0;
+}
+
+/*точки перелома*/
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 0 199px 60px;
+    min-width: calc(1280px - 2*199px);
+  }
+}
+
+@media (min-width: 931px) and (max-width: 1279px)  {
+  .footer {
+    padding: 0 0 4.7%;
+    min-width: 886px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 930px)  {
+  .footer {
+    padding: 0 0 36px;
+    min-width: 584px;
+    }
+}
+
+@media screen and (max-width: 639px)  {
+  .footer {
+    padding: 0 5.94% 36px;
+    min-width: calc(100% - 2*5.94%);
+  }
+}

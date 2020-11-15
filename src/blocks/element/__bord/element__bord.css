@@ -1,0 +1,9 @@
+.element__bord {
+  overflow:hidden;
+  width: 282px;
+  height: 282px;
+  border-radius: 10px 10px 0 0;
+  grid-area: 1/ 1/ 1/ 2;
+  z-index: 0;
+}
+

@@ -1,0 +1,21 @@
+.profile__name {
+  grid-area: name;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.33;
+  color: #FFFFFF;
+  margin: 0;
+  align-self: flex-end;
+  max-width: 295px;
+  white-space: normal;
+  overflow: auto;
+}
+
+/*точки перелома*/
+@media screen and (max-width: 769px)  {
+  .profile__name {
+    font-size: 27px;
+    line-height: 1.5;
+    max-width: 282px;
+  }
+}

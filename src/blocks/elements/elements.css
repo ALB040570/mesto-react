@@ -1,0 +1,31 @@
+
+.elements {
+display: grid;
+grid-template-columns: repeat(3, auto);
+grid-template-rows: repeat(2, auto);
+gap: 20px 18px;
+justify-content: center;
+align-items: center;
+margin-block-start: 0;
+margin-block-end: 0;
+padding: 0;
+padding-top: 47px;
+list-style: none;
+}
+
+ /*точки перелома*/
+
+@media (min-width: 640px) and (max-width: 930px)  {
+  .elements {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    }
+}
+
+@media screen and (max-width: 639px)  {
+  .elements {
+    grid-template-columns: 282px;
+    grid-template-rows: repeat(6, auto);
+    padding-top: 36px;
+  }
+}

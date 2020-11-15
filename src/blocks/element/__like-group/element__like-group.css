@@ -1,0 +1,9 @@
+.element__like-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: 2/ 2/ 2/ 2;
+  width: 20px;
+  height: 34px;
+}

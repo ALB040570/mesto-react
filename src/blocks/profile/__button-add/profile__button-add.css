@@ -1,0 +1,34 @@
+.profile__button-add {
+  border: 2px solid #ffffff;
+  background-image: url(../../../images/add.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #000000;
+  border-radius: 2px;
+}
+
+.profile__button-add:hover {
+  background-image: url(../../../images/addhover.png);
+  transition: background-image 1s linear;
+  border: 2px solid rgba(250, 250, 250, .6);
+  transition: border 1s linear;
+  cursor: pointer;
+}
+
+ /*точки перелома*/
+ @media (min-width: 640px)  and (max-width: 930px)  {
+  .profile__button-add {
+    margin-top: 36px;
+    width: 584px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+.profile__button-add {
+  margin-top: 36px;
+    width: 282px;
+  }
+}

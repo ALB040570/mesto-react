@@ -1,0 +1,12 @@
+.popup__grid {
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  margin: auto;
+  vertical-align: middle;
+  top: auto;
+  left: auto;
+  max-width: inherit;
+}
+

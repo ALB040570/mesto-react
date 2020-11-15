@@ -1,0 +1,45 @@
+.page {
+  background: #000000;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  font-style: normal;
+  color: #FFFFFF;
+  /* построение сетки всей страницы*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+ /*точки перелома*/
+@media screen and (min-width: 1280px) {
+  .page {
+    padding: 45px 0 60px;
+  }
+}
+@media (min-width: 931px) and (max-width: 1279px)  {
+  .page {
+    padding: 3.5% 0 4.69%;
+    }
+}
+@media (min-width: 640px) and (max-width: 930px)  {
+  .page {
+    padding: 28px 0 4.69%;
+    }
+}
+
+@media screen and (max-width: 639px)  {
+  .page {
+    padding: 28px 0 36px;
+    min-width: 300px;
+  }
+}
+

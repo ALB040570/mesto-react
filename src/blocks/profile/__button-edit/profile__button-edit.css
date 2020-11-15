@@ -1,0 +1,29 @@
+.profile__button-edit {
+  grid-area: edit;
+  border: 1px solid #ffffff;
+  background-image: url(../../../images/edit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  align-self: flex-end;
+  margin-bottom: 50%;
+  background-color: #000000;
+}
+
+.profile__button-edit:hover {
+  background-image: url(../../../images/edithover.png);
+  transition: background-image 1s linear;
+  border: 1px solid rgba(250, 250, 250, .6);
+  transition: border 1s linear;
+  cursor: pointer;
+}
+
+ /*точки перелома*/
+ @media screen and (max-width: 769px)  {
+  .profile__button-edit {
+    width: 18px;
+    height: 18px;
+  }
+}

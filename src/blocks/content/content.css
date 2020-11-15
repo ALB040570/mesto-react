@@ -1,0 +1,35 @@
+
+ /*точки перелома*/
+ @media screen and (min-width: 1280px) {
+  .content {
+    padding: 36px 199px 66px;
+    min-width: calc(1280px - 2*199px);
+  }
+}
+
+@media (min-width: 931px) and (max-width: 1279px)  {
+  .content {
+    padding: 36px 0 5.1%;
+    min-width: calc(100% - 2*15.5%);
+    }
+}
+
+@media (min-width: 640px) and (max-width: 930px)  {
+  .content {
+    padding: 37px 0 48px;
+    min-width: calc(100% - 2*11%);
+    }
+}
+
+@media (min-width: 301px) and (max-width: 639px)  {
+  .content {
+    padding: 38px 5.94% 48px;
+    min-width: calc(100% - 2*5.94%);
+  }
+}
+@media screen and (max-width: 300px)  {
+  .content {
+    padding: 38px 19px 48px;
+    max-width: 262px;
+  }
+}

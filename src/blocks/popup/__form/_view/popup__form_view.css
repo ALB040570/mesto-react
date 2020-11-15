@@ -1,0 +1,9 @@
+.popup__form_view {
+  background-color: rgba(1, 1, 1, 0);
+}
+
+@media screen and (max-width: 639px)  {
+  .popup__form_view {
+    background-color: rgba(1, 1, 1, 0);
+  }
+}

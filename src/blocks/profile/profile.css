@@ -1,0 +1,21 @@
+@import url(./__grid/profile__grid.css);
+@import url(./__avatar/profile__avatar.css);
+@import url(./__avatar/_edit/profile__avatar_edit.css);
+@import url(./__name/profile__name.css);
+@import url(./__profession/profile__profession.css);
+@import url(./__button-edit/profile__button-edit.css);
+@import url(./__button-add/profile__button-add.css);
+
+.profile {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+ /*точки перелома*/
+@media screen and (max-width: 930px)  {
+  .profile {
+    flex-direction: column;
+  }
+}

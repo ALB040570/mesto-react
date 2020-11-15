@@ -1,0 +1,23 @@
+.profile__grid {
+  display: grid;
+  justify-content: start;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
+  gap: 16px 17px;
+  grid-template-areas:
+  "avatar name edit"
+  "avatar profession empty";
+}
+
+ /*точки перелома*/
+ @media screen and (max-width: 769px)  {
+  .profile__grid {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+    "avatar avatar"
+    "name edit"
+    "profession profession";
+    gap: 7px 12px;
+  }
+}

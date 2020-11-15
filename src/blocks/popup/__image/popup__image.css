@@ -1,0 +1,13 @@
+.popup__image {
+  object-fit: inherit;
+  max-width: 75vw;
+  max-height: 75vh;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 639px)  {
+  .popup__image {
+    max-width: 75vw;
+  }
+}

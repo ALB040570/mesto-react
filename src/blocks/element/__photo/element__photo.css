@@ -1,0 +1,16 @@
+.element__photo {
+  overflow:hidden;
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  grid-area: 1/ 1/ 1/ 2;
+  z-index: 0;
+
+}
+
+.element__photo:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease-out;
+  cursor: pointer;
+}
