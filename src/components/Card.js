@@ -3,7 +3,7 @@ function Card(props) {
     return (
         <li className="element">
             <div className="element__bord">
-                <img src={props.card.link} alt="фото места" className="element__photo" onClick = {()=>props.onCardClick(props.card)}/>
+                <img src={props.card.link} alt={props.card.name} className="element__photo" onClick = {()=>props.onCardClick(props.card)}/>
             </div>
             <h2 className="element__title">{props.card.name}</h2>
             <div className="element__like-group">

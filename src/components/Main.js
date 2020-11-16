@@ -5,15 +5,23 @@ import { useState, useEffect } from 'react';
 import Card from './Card.js';
 
 function Main(props) {
-    const[[userName,userDescription,userAvatar,cards], setData]=useState(["Жак Кусто","Исследователь океана",kusto,[]]);
+    // const[[userName,userDescription,userAvatar,cards], setData]=useState(["Жак Кусто","Исследователь океана",kusto,[]]);
+    const[userName, setUserName]=useState("Жак Кусто");
+    const[userDescription, setUserDescription]=useState("Исследователь океана");
+    const[userAvatar, setUserAvatar]=useState(kusto);
+    const[cards, setCards]=useState([]);
 
     useEffect(()=>{
         const userInfoFromServer = api.getUsersInfo();
         const cardsFromSer= api.getCards();
         Promise.all([userInfoFromServer,cardsFromSer])
-        .then((res) => {
-            setData([res[0].name, res[0].about, res[0].avatar,res[1]]);
+        .then(([userInfoFromServer,cardsFromSer]) => {
+            setUserName(userInfoFromServer.name);
+            setUserDescription(userInfoFromServer.about);
+            setUserAvatar(userInfoFromServer.avatar);
+            setCards(cardsFromSer);
           })
+        .catch((err) => {console.log(err);});
      },[]);
 
     return (
@@ -31,7 +39,7 @@ function Main(props) {
     <ul className="elements">
     {cards.map((item,i)=>{
        return(
-       <Card card={item} onCardClick={props.onCardClick}/>
+       <Card card={item} key={i} onCardClick={props.onCardClick}/>
        )
     })}
     </ul>

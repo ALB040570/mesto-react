@@ -3,7 +3,7 @@ function PopupWithForm(props) {
         <div className={props.isOpen? 'popup  popup_opened': 'popup'} id={props.id}>
         <div className="popup__grid">
           <button type="button" className="popup__close" onClick={props.onClose}/>
-          <form action={props.formDataUrl} name={props.name} id = {props.name} className="popup__form" novalidate>
+          <form name={props.name} id = {props.name} className="popup__form" noValidate>
             <fieldset className="popup__fieldset">
               <legend className="popup__title">{props.title}</legend>
                 {props.children}
