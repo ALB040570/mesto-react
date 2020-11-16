@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 import Card from './Card.js';
 
 function Main(props) {
-    // const[[userName,userDescription,userAvatar,cards], setData]=useState(["Жак Кусто","Исследователь океана",kusto,[]]);
     const[userName, setUserName]=useState("Жак Кусто");
     const[userDescription, setUserDescription]=useState("Исследователь океана");
     const[userAvatar, setUserAvatar]=useState(kusto);
