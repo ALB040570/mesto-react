@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 
 function App() {
+  
   const[isEditProfilePopupOpen,handleEditProfileClick] = useState(false);
   const[isAddPlacePopupOpen,handleAddPlaceClick] = useState(false);
   const[isEditAvatarPopupOpen,handleEditAvatarClick] = useState(false);
