@@ -32,11 +32,13 @@ class Api {
       headers: this._headers,
       body: JSON.stringify({
         name: data.name,
-        about: data.info
+        about: data.about
     })
   })
       .then(res => res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`))
   }
+
+
   //Добавление новой карточки
   postCard(data) {
     return fetch(this._baseUrl + this._cards, {
@@ -57,6 +59,18 @@ class Api {
     })
       .then(res => res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`))
   }
+  
+  //функция объединяет и вызывает методы обновления/снятия лайка
+  changeLikeCardStatus(cardId, isLike) {
+    const method = isLike?'PUT':'DELETE';
+    return fetch(`${this._baseUrl}${this._likes}/${cardId}`, {
+      method: method,
+      headers: this._headers,
+    })
+      .then(res => res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`))
+  }
+
+
   //Постановка лайка
   putLike(cardId) {
     return fetch(`${this._baseUrl}${this._likes}/${cardId}`, {
@@ -79,7 +93,7 @@ class Api {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        avatar: data.link
+        avatar: data.avatar
     })
   })
       .then(res => res.ok ? res.json() : Promise.reject(`Ошибка: ${res.status}`))
