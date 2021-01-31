@@ -1,5 +1,6 @@
 import optionsForApi from './constants.js';
 // класс Api 
+
 class Api {
   constructor(options) {
     this._baseUrl = options.baseUrl;
