@@ -19,6 +19,8 @@ function AddPlacePopup(props) {
         name: name,
         link: link,
     });
+    setName('');
+    setLink('');
     }
   return(
     <PopupWithForm 
@@ -28,8 +30,7 @@ function AddPlacePopup(props) {
       isOpen = {props.isOpen}
       onClose = {props.onClose}
       onSubmit = {handleSubmit}
-      children = {
-        <>
+      >
         <input 
           placeholder="Название" 
           required 
@@ -50,9 +51,8 @@ function AddPlacePopup(props) {
           type="url"
           value={link || ''}
           onChange={handleChange} />
-        <span className="popup__error" id="link-error"/></>}
-    />
-
+        <span className="popup__error" id="link-error"/>
+    </PopupWithForm>
   )
 }
 export default AddPlacePopup;

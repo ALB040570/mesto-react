@@ -23,7 +23,7 @@ function Main(props) {
        return(
        <Card 
           card={item} 
-          key={i} 
+          key={item._id} 
           onCardLike={props.onCardLike} 
           onCardDelete={props.onCardDelete}
           onCardClick={props.onCardClick}

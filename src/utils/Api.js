@@ -1,4 +1,4 @@
-import optionsForApi from './utils.js';
+import optionsForApi from './constants.js';
 // класс Api 
 class Api {
   constructor(options) {
